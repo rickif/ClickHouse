@@ -797,11 +797,27 @@ class FunctionBinaryArithmetic : public IFunction
     static bool castType(const IDataType * type, auto && f)
     {
         using Types = TypeList<
-            DataTypeUInt8, DataTypeUInt16, DataTypeUInt32, DataTypeUInt64, DataTypeUInt128, DataTypeUInt256,
-            DataTypeInt8, DataTypeInt16, DataTypeInt32, DataTypeInt64, DataTypeInt128, DataTypeInt256,
-            DataTypeDecimal32, DataTypeDecimal64, DataTypeDecimal128, DataTypeDecimal256,
-            DataTypeDate, DataTypeDateTime,
-            DataTypeFixedString, DataTypeString,
+            DataTypeUInt8,
+            DataTypeUInt16,
+            DataTypeUInt32,
+            DataTypeUInt64,
+            DataTypeUInt128,
+            DataTypeUInt256,
+            DataTypeInt8,
+            DataTypeInt16,
+            DataTypeInt32,
+            DataTypeInt64,
+            DataTypeInt128,
+            DataTypeInt256,
+            DataTypeDecimal32,
+            DataTypeDecimal64,
+            DataTypeDecimal128,
+            DataTypeDecimal256,
+            DataTypeDate,
+            DataTypeDateTime,
+            DataTypeDateTime64,
+            DataTypeFixedString,
+            DataTypeString,
             DataTypeInterval>;
 
         using Floats = TypeList<DataTypeFloat32, DataTypeFloat64>;
